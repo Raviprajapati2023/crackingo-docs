@@ -1,10 +1,14 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Crackingo Docs",
   description: "AI-Powered Learning Platform Documentation",
-  base: "/crackingo-docs/", // Change this to your GitHub Pages path
+  
+  // For Netlify, use "/" as base
+  base: "/",
+  
+  // Enable clean URLs
+  cleanUrls: true,
   
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -13,19 +17,16 @@ export default defineConfig({
     ['meta', { property: 'og:locale', content: 'en' }],
     ['meta', { property: 'og:title', content: 'Crackingo | AI-Powered Learning Platform' }],
     ['meta', { property: 'og:site_name', content: 'Crackingo' }],
-    ['meta', { property: 'og:image', content: 'https://your-domain.com/og-image.jpg' }],
-    ['meta', { property: 'og:url', content: 'https://your-domain.com/' }],
   ],
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.svg',
     
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/introduction' },
       { text: 'Components', link: '/components/overview' },
-      { text: 'API Reference', link: '/api/authentication' },
+      { text: 'API Reference', link: '/api/overview' },
       { 
         text: 'Resources', 
         items: [
@@ -65,24 +66,6 @@ export default defineConfig({
             { text: 'Quiz Engine', link: '/guide/quiz-engine' },
             { text: 'Points & Rewards', link: '/guide/points-rewards' },
             { text: 'User Management', link: '/guide/user-management' }
-          ]
-        },
-        {
-          text: 'Development',
-          items: [
-            { text: 'Development Setup', link: '/guide/development-setup' },
-            { text: 'Code Style Guide', link: '/guide/code-style' },
-            { text: 'Testing', link: '/guide/testing' },
-            { text: 'Deployment', link: '/guide/deployment' }
-          ]
-        },
-        {
-          text: 'Support',
-          items: [
-            { text: 'Troubleshooting', link: '/guide/troubleshooting' },
-            { text: 'FAQ', link: '/guide/faq' },
-            { text: 'Contributing', link: '/guide/contributing' },
-            { text: 'Changelog', link: '/guide/changelog' }
           ]
         }
       ],
@@ -124,15 +107,6 @@ export default defineConfig({
             { text: 'CTimer', link: '/components/ctimer' },
             { text: 'CTooltip', link: '/components/ctooltip' }
           ]
-        },
-        {
-          text: 'Layout Components',
-          items: [
-            { text: 'SForm', link: '/components/sform' },
-            { text: 'SFormControl', link: '/components/sformcontrol' },
-            { text: 'SectionCard', link: '/components/sectioncard' },
-            { text: 'CBreadcrumbs', link: '/components/cbreadcrumbs' }
-          ]
         }
       ],
       
@@ -155,26 +129,11 @@ export default defineConfig({
             { text: 'Points & Rewards', link: '/api/points-endpoints' }
           ]
         }
-      ],
-      
-      '/examples/': [
-        {
-          text: 'Examples',
-          items: [
-            { text: 'Basic Usage', link: '/examples/basic-usage' },
-            { text: 'Form Handling', link: '/examples/form-handling' },
-            { text: 'API Integration', link: '/examples/api-integration' },
-            { text: 'State Management', link: '/examples/state-management' },
-            { text: 'Custom Components', link: '/examples/custom-components' }
-          ]
-        }
       ]
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-username/crackingo' },
-      { icon: 'twitter', link: 'https://twitter.com/crackingo' },
-      { icon: 'discord', link: 'https://discord.gg/crackingo' }
+      { icon: 'github', link: 'https://github.com/Raviprajapati2023/crackingo-docs' }
     ],
 
     footer: {
@@ -183,14 +142,13 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/your-username/crackingo-docs/edit/main/:path'
+      pattern: 'https://github.com/Raviprajapati2023/crackingo-docs/edit/main/docs/:path'
     },
 
     search: {
       provider: 'local'
     },
 
-    // Custom theme configuration
     outline: {
       level: [2, 3]
     }
