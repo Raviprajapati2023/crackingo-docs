@@ -1,0 +1,45 @@
+# netlify.toml
+[build]
+  publish = "docs/.vitepress/dist"
+  command = "npm run docs:build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# This is crucial for VitePress routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Additional redirects for clean URLs
+[[redirects]]
+  from = "/guide"
+  to = "/guide/"
+  status = 301
+
+[[redirects]]
+  from = "/components"
+  to = "/components/"
+  status = 301
+
+[[redirects]]
+  from = "/api"
+  to = "/api/"
+  status = 301
+
+# Headers for better caching
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "max-age=31536000"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "max-age=31536000"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "max-age=31536000"
