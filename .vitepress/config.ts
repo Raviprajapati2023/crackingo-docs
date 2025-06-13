@@ -28,10 +28,7 @@ export default defineConfig({
       { 
         text: 'Resources', 
         items: [
-          { text: 'Examples', link: '/examples/basic-usage' },
-          { text: 'Troubleshooting', link: '/guide/troubleshooting' },
           { text: 'FAQ', link: '/guide/faq' },
-          { text: 'Changelog', link: '/guide/changelog' }
         ]
       }
     ],
@@ -52,7 +49,6 @@ export default defineConfig({
           items: [
             { text: 'Project Structure', link: '/guide/project-structure' },
             { text: 'State Management', link: '/guide/state-management' },
-            { text: 'API Integration', link: '/guide/api-integration' },
             { text: 'Routing', link: '/guide/routing' }
           ]
         },
@@ -62,7 +58,6 @@ export default defineConfig({
             { text: 'Authentication', link: '/guide/authentication' },
             { text: 'Learning System', link: '/guide/learning-system' },
             { text: 'Quiz Engine', link: '/guide/quiz-engine' },
-            { text: 'Points & Rewards', link: '/guide/points-rewards' },
             { text: 'User Management', link: '/guide/user-management' }
           ]
         }
