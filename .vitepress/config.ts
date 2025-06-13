@@ -25,8 +25,6 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/introduction' },
-      { text: 'Components', link: '/components/overview' },
-      { text: 'API Reference', link: '/api/overview' },
       { 
         text: 'Resources', 
         items: [
@@ -69,67 +67,6 @@ export default defineConfig({
           ]
         }
       ],
-      
-      '/components/': [
-        {
-          text: 'Component Library',
-          items: [
-            { text: 'Overview', link: '/components/overview' },
-            { text: 'Design Principles', link: '/components/design-principles' },
-            { text: 'Usage Guidelines', link: '/components/usage-guidelines' }
-          ]
-        },
-        {
-          text: 'Form Components',
-          items: [
-            { text: 'CInput', link: '/components/cinput' },
-            { text: 'CSelect', link: '/components/cselect' },
-            { text: 'CEditor', link: '/components/ceditor' },
-            { text: 'CFile', link: '/components/cfile' },
-            { text: 'CUploader', link: '/components/cuploader' },
-            { text: 'COtpInput', link: '/components/cotpinput' },
-            { text: 'CTagsInput', link: '/components/ctagsinput' }
-          ]
-        },
-        {
-          text: 'Data Components',
-          items: [
-            { text: 'APITable', link: '/components/apitable' },
-            { text: 'CTable', link: '/components/ctable' }
-          ]
-        },
-        {
-          text: 'UI Components',
-          items: [
-            { text: 'CBtn', link: '/components/cbtn' },
-            { text: 'CDialog', link: '/components/cdialog' },
-            { text: 'SAvatar', link: '/components/savatar' },
-            { text: 'CTimer', link: '/components/ctimer' },
-            { text: 'CTooltip', link: '/components/ctooltip' }
-          ]
-        }
-      ],
-      
-      '/api/': [
-        {
-          text: 'API Reference',
-          items: [
-            { text: 'Overview', link: '/api/overview' },
-            { text: 'Authentication', link: '/api/authentication' },
-            { text: 'Error Handling', link: '/api/error-handling' }
-          ]
-        },
-        {
-          text: 'Endpoints',
-          items: [
-            { text: 'Authentication', link: '/api/auth-endpoints' },
-            { text: 'User Management', link: '/api/user-endpoints' },
-            { text: 'Learning System', link: '/api/learning-endpoints' },
-            { text: 'Quiz System', link: '/api/quiz-endpoints' },
-            { text: 'Points & Rewards', link: '/api/points-endpoints' }
-          ]
-        }
-      ]
     },
 
     socialLinks: [

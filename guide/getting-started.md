@@ -386,7 +386,6 @@ If you encounter issues:
 
 Now that you have Crackingo running locally, explore these areas:
 
-- 📖 **[Component Library](/components/overview)** - Learn about available UI components
 - 🏗️ **[Architecture Guide](/guide/project-structure)** - Understand the project structure
 - 🔌 **[API Integration](/guide/api-integration)** - Connect with backend services
 - 🎯 **[Learning System](/guide/learning-system)** - Build educational content

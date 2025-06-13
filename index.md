@@ -14,10 +14,6 @@ hero:
       text: Get Started
       link: /guide/getting-started
     
-    - theme: alt
-      text: Component Library
-      link: /components/overview
-
 features:
   - icon: 🎯
     title: Interactive Learning
